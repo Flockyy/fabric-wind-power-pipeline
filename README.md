@@ -13,6 +13,7 @@ Ce projet implémente une architecture Medallion (Bronze/Silver/Gold) complète 
 
 ## 🏗️ Architecture
 
+```
 fabric-wind-power-pipeline/
 ├── README.md
 ├── .gitignore
@@ -22,6 +23,7 @@ fabric-wind-power-pipeline/
 │   └── gold/
 ├── documentation/
 └── screenshots/
+```
 
 ## 📊 Technologies utilisées
 
