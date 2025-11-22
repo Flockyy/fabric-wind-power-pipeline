@@ -20,13 +20,13 @@ A production-ready data engineering project implementing a complete **Medallion 
 
 ###  Key Features
 
-- ** Medallion Architecture**: Industry-standard 3-layer data architecture (Bronze  Silver  Gold)
-- ** Dimensional Modeling**: Star schema with fact and dimension tables for optimized analytics
-- ** Automated Orchestration**: Microsoft Fabric Data Pipeline for scheduled execution
-- ** Delta Lake Integration**: ACID transactions and time-travel capabilities
-- ** Power BI Ready**: Pre-modeled data optimized for reporting and dashboards
-- ** PySpark Processing**: Scalable distributed data transformations
-- ** GitHub Integration**: Automated daily data ingestion from remote repository
+- **Medallion Architecture**: Industry-standard 3-layer data architecture (Bronze -> Silver -> Gold)
+- **Dimensional Modeling**: Star schema with fact and dimension tables for optimized analytics
+- **Automated Orchestration**: Microsoft Fabric Data Pipeline for scheduled execution
+- **Delta Lake Integration**: ACID transactions and time-travel capabilities
+- **Power BI Ready**: Pre-modeled data optimized for reporting and dashboards
+- **PySpark Processing**: Scalable distributed data transformations
+- **GitHub Integration**: Automated daily data ingestion from remote repository
 
 ---
 
@@ -145,7 +145,7 @@ Gold  NB_Silver_To_Gold_Transformations_Python.ipynb
 
 4. **Configure Data Pipeline**
 \\\
-Create Pipeline  Add Notebook Activities  Link Bronze  Silver  Gold
+Create Pipeline  Add Notebook Activities  Link Bronze -> Silver -> Gold
 Set Schedule  Enable monitoring
 \\\
 
