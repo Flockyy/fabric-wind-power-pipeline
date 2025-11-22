@@ -86,7 +86,29 @@ A production-ready data engineering project implementing a complete **Medallion 
 
 ##  Project Structure
 
-```nfabric-wind-power-pipeline/n├── README.mdn├── .gitignoren├── notebooks/n│   ├── bronze/n│   │   └── NB_Get_Daily_Data_Python.ipynb         # Ingest raw data from GitHubn│   ├── silver/n│   │   └── NB_Bronze_To_Silver_Transformations_Python.ipynb  # Clean & transformn│   └── gold/n│       └── NB_Silver_To_Gold_Transformations_Python.ipynb   # Build star scheman├── documentation/n│   └── architecture_diagrams/n└── screenshots/n    ├── 00_github_repo_structure.pngn    ├── 01_workspace_with_three_lakehouses.pngn    ├── 02_bronze_table_data.pngn    ├── 03_silver_table_schema.pngn    ├── 04_gold_lakehouse_tables.pngn    ├── 04_fact_table_preview.pngn    ├── 04_dim_turbine_preview.pngn    └── 05_pipeline_execution_success.pngn```
+```
+fabric-wind-power-pipeline/
+├── README.md
+├── .gitignore
+├── notebooks/
+│   ├── bronze/
+│   │   └── NB_Get_Daily_Data_Python.ipynb
+│   ├── silver/
+│   │   └── NB_Bronze_To_Silver_Transformations_Python.ipynb
+│   └── gold/
+│       └── NB_Silver_To_Gold_Transformations_Python.ipynb
+├── documentation/
+│   └── architecture_diagrams/
+└── screenshots/
+    ├── 00_github_repo_structure.png
+    ├── 01_workspace_with_three_lakehouses.png
+    ├── 02_bronze_table_data.png
+    ├── 03_silver_table_schema.png
+    ├── 04_gold_lakehouse_tables.png
+    ├── 04_fact_table_preview.png
+    ├── 04_dim_turbine_preview.png
+    └── 05_pipeline_execution_success.png
+```
 
 ---
 
