@@ -286,6 +286,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **[ Back to Top](#-wind-power-analytics-pipeline)**
 
-Made with  by [Florian Abgrall](https://github.com/Flockyy)
-
 </div>
