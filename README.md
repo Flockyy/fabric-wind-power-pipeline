@@ -32,7 +32,7 @@ A production-ready data engineering project implementing a complete **Medallion 
 
 ##  Architecture
 
-\\\
+```
 
   GitHub Source    (Daily Wind Power Data)
 
@@ -67,7 +67,7 @@ A production-ready data engineering project implementing a complete **Medallion 
 
     Power BI       (Dashboards & Reports)
 
-\\\
+```
 
 ---
 
@@ -86,7 +86,7 @@ A production-ready data engineering project implementing a complete **Medallion 
 
 ##  Project Structure
 
-\\\
+```
 fabric-wind-power-pipeline/
  README.md
  .gitignore
@@ -108,7 +108,7 @@ fabric-wind-power-pipeline/
      04_fact_table_preview.png
      04_dim_turbine_preview.png
      05_pipeline_execution_success.png
-\\\
+```
 
 ---
 
@@ -123,31 +123,31 @@ fabric-wind-power-pipeline/
 ### Setup Steps
 
 1. **Create Fabric Workspace**
-\\\ash
+```ash
 # In Microsoft Fabric portal
 Create workspace  Enable Fabric features
-\\\
+```
 
 2. **Create Three Lakehouses**
-\\\
+```
 - Bronze_Lakehouse  (raw data)
 - Silver_Lakehouse  (cleaned data)
 - Gold_Lakehouse    (dimensional model)
-\\\
+```
 
 3. **Import Notebooks**
-\\\ash
+```ash
 # Upload notebooks from notebooks/ directory to respective lakehouse contexts
 Bronze  NB_Get_Daily_Data_Python.ipynb
 Silver  NB_Bronze_To_Silver_Transformations_Python.ipynb
 Gold  NB_Silver_To_Gold_Transformations_Python.ipynb
-\\\
+```
 
 4. **Configure Data Pipeline**
-\\\
+```
 Create Pipeline  Add Notebook Activities  Link Bronze -> Silver -> Gold
 Set Schedule  Enable monitoring
-\\\
+```
 
 ---
 
@@ -247,7 +247,7 @@ Creates star schema:
 
 ##  Example Queries
 
-\\\sql
+```sql
 -- Total power production by turbine (last 30 days)
 SELECT 
     t.turbine_name,
@@ -258,7 +258,7 @@ JOIN gold.dim_date d ON f.date_id = d.date_id
 WHERE d.full_date >= CURRENT_DATE - INTERVAL 30 DAYS
 GROUP BY t.turbine_name
 ORDER BY total_production_mw DESC;
-\\\
+```
 
 ---
 
