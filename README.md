@@ -33,45 +33,39 @@ A production-ready data engineering project implementing a complete **Medallion 
 ##  Architecture
 
 ```
-
-  GitHub Source    (Daily Wind Power Data)
-
-         
-         
-
-  BRONZE LAYER (Raw Lakehouse)           
-   Raw CSV ingestion                    
-   Schema enforcement                   
-   Delta Lake format                    
-
-         
-         
-
-  SILVER LAYER (Cleaned Lakehouse)       
-   Data quality checks                  
-   Type conversions                     
-   Null handling                        
-   Business logic application           
-
-         
-         
-
-  GOLD LAYER (Analytics Lakehouse)       
-   Star schema model                    
-   Fact: Turbine Production             
-   Dimensions: Turbine, Date, Location  
-   Aggregated metrics                   
-
-         
-         
-
-    Power BI       (Dashboards & Reports)
-
+GitHub Source (Daily Wind Power Data)
+        │
+        ▼
+┌─────────────────────────────────┐
+│   BRONZE LAYER (Raw Lakehouse)  │
+│   ├── Raw CSV ingestion         │
+│   ├── Schema enforcement        │
+│   └── Delta Lake format         │
+└─────────────────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────┐
+│ SILVER LAYER (Cleaned Lakehouse)│
+│   ├── Data quality checks       │
+│   ├── Type conversions          │
+│   ├── Null handling             │
+│   └── Business logic            │
+└─────────────────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────┐
+│ GOLD LAYER (Analytics Lakehouse)│
+│   ├── Star schema model         │
+│   ├── Fact: Turbine Production  │
+│   ├── Dimensions: Turbine, Date │
+│   └── Aggregated metrics        │
+└─────────────────────────────────┘
+        │
+        ▼
+   Power BI (Dashboards & Reports)
 ```
 
----
-
-##  Technologies
+---##  Technologies
 
 | Category | Tools |
 |----------|-------|
