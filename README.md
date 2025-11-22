@@ -1,4 +1,4 @@
-﻿#  Wind Power Analytics Pipeline
+#  Wind Power Analytics Pipeline
 <div align="center">
 
 [![Microsoft Fabric](https://img.shields.io/badge/Microsoft_Fabric-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://www.microsoft.com/en-us/microsoft-fabric)
