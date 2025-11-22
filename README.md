@@ -155,29 +155,29 @@ Set Schedule  Enable monitoring
 
 ### 1 Bronze Layer: Data Ingestion
 
-**Notebook**: \NB_Get_Daily_Data_Python.ipynb\
+**Notebook**: `NB_Get_Daily_Data_Python.ipynb`
 
 - Fetches CSV files from GitHub repository
 - Validates schema and data types
 - Writes raw data to Delta tables
 - Preserves original source structure
 
-**Output**: \ronze.turbine_raw_data\
+**Output**: \`bronze.turbine_raw_data`
 
 ### 2 Silver Layer: Data Transformation
 
-**Notebook**: \NB_Bronze_To_Silver_Transformations_Python.ipynb\
+**Notebook**: `NB_Bronze_To_Silver_Transformations_Python.ipynb`
 
 - Removes duplicates and null values
 - Standardizes timestamp formats
 - Applies data quality rules
 - Enriches with calculated fields
 
-**Output**: \silver.turbine_cleaned_data\
+**Output**: `silver.turbine_cleaned_data`
 
 ### 3 Gold Layer: Dimensional Modeling
 
-**Notebook**: \NB_Silver_To_Gold_Transformations_Python.ipynb\
+**Notebook**: `NB_Silver_To_Gold_Transformations_Python.ipynb`
 
 Creates star schema:
 
@@ -185,8 +185,8 @@ Creates star schema:
 - \act_turbine_production\ (power output, wind speed, temperature)
 
 **Dimension Tables**:
-- \dim_turbine\ (turbine metadata, capacity, location)
-- \dim_date\ (date hierarchy for time intelligence)
+- `dim_turbine` (turbine metadata, capacity, location)
+- `dim_date` (date hierarchy for time intelligence)
 
 **Output**: Power BI-ready dimensional model
 
